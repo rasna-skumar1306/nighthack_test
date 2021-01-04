@@ -1,0 +1,29 @@
+Top Heading == Essential Mobile App Landing for Workspaces
+Top Content == A mobile app landing page is important and essential for right amount of information <br/> about your product. Start increasing your user base upon the launch of your product
+
+Center Heading == Explore our demos 
+Center Content == Explore our landing Page demos on different kind of topics. More Demos are coming soon.
+
+Center Carousel 
+1st img == Website Landing
+2nd img == App Modern Landing
+
+Center 2nd Section Heading == Start your business journey with Soprano
+Center 2nd Section Heading == Try Shopify for free, and explore all the tools and services you need to start, run, and grow your business.
+
+Center 2nd Section Content
+1st img Heading == Move Your Business Online
+1st img Content == Create a business, whether you’ve got a fresh idea or are looking for a new way to make money.
+
+2nd img Heading == Switch to Soprano
+2nd img Content == Bring your business to Soprano, no matter which ecommerce platform you’re currently using.
+
+3rd img Heading == Enjoy ur benefits
+3rd img Content == Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.
+
+button centered Content == Start Free Trail
+
+Last Section Heading == What Clients say about our product
+Last Section Content
+user Name == Allen Jones
+user Content == Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore features that Lorem ipsum dolor sit amet consectetur.

@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { sliderData } from './components/carouselData'
+import CenterBottom from './components/CenterBottom'
+import CenterCarousel from './components/CenterCarousel'
+import CenterTop from './components/CenterTop'
+import Header from './components/Header'
+import TopCarousel from './components/TopCarousel'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+      <TopCarousel />
+      <CenterTop />
+      <CenterCarousel slides={sliderData} />
+      <CenterBottom />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

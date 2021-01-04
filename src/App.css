@@ -1,38 +1,245 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  padding: 1rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 5rem;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.nav_links {
+  list-style: none;
+  margin: 1rem auto;
+}
+
+.nav_link {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 0.4rem auto;
+}
+
+.nav_link:focus {
+  color: #c162e5;
+}
+
+.menu__icon {
+  cursor: pointer;
+}
+
+.top_bg {
+  background: linear-gradient(
+      rgba(206, 206, 206, 0.45),
+      rgba(179, 179, 179, 0.45)
+    ),
+    url('https://s3-alpha-sig.figma.com/img/5cda/d9a5/4646e442ee7d6d87a8ea943fa069c71b?Expires=1610928000&Signature=RRKlZN~DgLLzHRX3A-GRjI97F1LJIEyvJff60lHXGnJVpAlnkDtC1knGPouaEyGveDrL53U~ZaZwvk5Sk4BOipObfPbz8wWxDN9qlHfIcrbrDV1GKawXa6W4qF8rhEYmHKXTYqdrXariLn3psUTHGJgiYzGdEM9ShdyCrMT2DOZqC3xZQ7qOQP0HPbDEZXFjdv9s2C8nyesMPs3Q4exo1VyDRce7ocIOce4-rHxqpwzlhAqP1g7TEpTPO3Bn9KaA6dBsnKN5MhyxVjY3r5MCpHI~c6LDLgiQbym3JcAlklbyLSrpDbcqWDhRi6xajHGhjO5UzpjRsSubxeZchiuhaQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 400px;
+  margin: 1.2rem auto 3rem;
+  width: 100%;
+}
+
+.phone {
+  position: absolute;
+  top: 25%;
+  right: 6%;
+  width: 23rem;
+  height: 22rem;
+  z-index: 1;
+}
+
+.phone.ph1 {
+  right: 16%;
+  z-index: 2;
+}
+
+.center__top {
+  margin: 3rem auto;
+}
+
+.center__top > h2 {
+  font-weight: 500;
+  text-align: center;
+  margin: 3rem auto 1rem;
+}
+
+.center__top > p {
+  font-weight: 400;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.507);
+}
+
+.center__top > button {
+  background: #c162e5;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  padding: 5px 10px;
+  text-align: center;
+  height: 2rem;
+  margin: 2rem auto;
+}
+
+.arrow {
+  margin: auto 2px auto 5px;
+}
+
+hr {
+  background-color: #e5e5e5;
+  width: 75%;
+  margin: auto;
+}
+
+.center__middle {
+  text-align: center;
+  margin: 1rem;
+}
+
+.center__middle > h2 {
+  font-weight: 700;
+  margin: 1rem auto;
+}
+
+.center__middle > p {
+  color: rgba(0, 0, 0, 0.507);
+}
+.center__carousel {
+  position: relative;
+  margin: 6rem auto;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__img {
+  width: 26rem;
+  height: 14rem;
+  border-radius: 10px;
+}
+
+.carousel__content {
+  font-weight: 700;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 30%;
+  right: 3rem;
+  height: 1.3rem;
+  color: #000;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.25s ease;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 30%;
+  left: 3rem;
+  height: 1.3rem;
+  color: #000;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.25s ease;
+}
+
+.rightArrow:hover,
+.leftArrow:hover {
+  transform: scale(1.5);
+}
+
+.slide {
+  opacity: 0.8;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center__bottom {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 800px) {
+  .phone {
+    right: 16%;
+  }
+
+  .phone.ph1 {
+    right: 26%;
+  }
+
+  .rightArrow {
+    right: 9rem;
+  }
+
+  .leftArrow {
+    left: 9rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1120px) {
+  .phone {
+    right: 26%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .phone.ph1 {
+    right: 36%;
+  }
+
+  .rightArrow {
+    right: 18rem;
+  }
+
+  .leftArrow {
+    left: 18rem;
+  }
+}
+
+@media screen and (min-width: 1370px) {
+  .phone {
+    right: 36%;
+  }
+
+  .phone.ph1 {
+    right: 45%;
+  }
+
+  .rightArrow {
+    right: 27rem;
+  }
+
+  .leftArrow {
+    left: 27rem;
   }
 }
